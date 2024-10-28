@@ -39,17 +39,12 @@ public class PlayerInteraction : MonoBehaviour
             other.gameObject.SetActive(false);
             // Destroy(other.gameObject);
         }
-        if (other.gameObject.CompareTag("PickDown"))
-        {
-            currentPoints -= 1;
-            other.gameObject.SetActive(false);
-            // Destroy(other.gameObject);
-        }
-        if (other.gameObject.CompareTag("Finish"))
-        {
-            WinCall();
-            other.gameObject.SetActive(false);
-        }
+        
+       // if (other.gameObject.CompareTag("Finish"))
+      //  {
+          //  WinCall();
+            ///other.gameObject.SetActive(false);
+       // }
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670741985279725092}
   m_Layer: 0
-  m_Name: PickDown
+  m_Name: DisgustPick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
