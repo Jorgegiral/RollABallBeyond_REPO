@@ -51,12 +51,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Density: 5
-    - _Power: 5
+    - _Density: 200
+    - _Power: 3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 2
+    - _Speed: 1.5
     m_Colors:
-    - _Color: {r: 0.16045141, g: 0.2924528, b: 0.15036489, a: 0}
-    - _Color2: {r: 0.5514193, g: 0.9607843, b: 0.5019608, a: 0}
+    - _Color: {r: 0.07849771, g: 0.16037738, b: 0.073380224, a: 0}
+    - _Color2: {r: 0.19682766, g: 0.3018868, b: 0.18369527, a: 0}
   m_BuildTextureStacks: []
