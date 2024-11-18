@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class ElevatorScript : MonoBehaviour
 {
-   
     public float raiseY;
+    public float speed;
+    Vector3 posicion;
 
-
-    // Update is called once per frame
+    private void Start()
+    {
+        posicion = transform.localPosition;
+    }
     void Update()
     {
-        transform.Translate(Vector3.up * raiseY * Time.deltaTime);
-        transform.Translate(Vector3.down * -raiseY * Time.deltaTime);
+        transform.position = new Vector3(posicion.x, posicion.y + raiseY * Mathf.Sin(Time.time * speed), posicion.z);
     }
 }
