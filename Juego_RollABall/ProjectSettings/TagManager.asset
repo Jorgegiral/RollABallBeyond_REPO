@@ -8,6 +8,11 @@ TagManager:
   - Ground
   - PickDown
   - InversePick
+  - Joy
+  - Disgust
+  - Sadness
+  - Angry
+  - Fear
   layers:
   - Default
   - TransparentFX

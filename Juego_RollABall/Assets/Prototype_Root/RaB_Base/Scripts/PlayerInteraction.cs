@@ -50,6 +50,11 @@ public class PlayerInteraction : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); }
+        if (collision.gameObject.CompareTag("Joy")) //{ salto y velocidad }
+        if (collision.gameObject.CompareTag("Disgust")) //{ inverso (ya echo) }
+        if (collision.gameObject.CompareTag("Fear")) //{ temblar }
+        if (collision.gameObject.CompareTag("Angry")) //{ va muy rapido}
+        if (collision.gameObject.CompareTag("Sadness")) //{ sin salto y lento }
     }
     void Respawn()
     {
