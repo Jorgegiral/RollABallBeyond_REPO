@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Waterrivermat
-  m_Shader: {fileID: -6465566751694194690, guid: a296668ae8aec344693613efc88c73f9,
+  m_Name: Watersplash
+  m_Shader: {fileID: -6465566751694194690, guid: 17e2dcf1e33205c45bb12be297db7ffe,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -17,9 +17,8 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -39,26 +38,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.5
-    - _AlphaClip: 0
-    - _AlphaToMask: 0
-    - _Blend: 0
-    - _CastShadows: 1
-    - _Cull: 2
-    - _Density: 35
-    - _DstBlend: 0
+    - _Alpha: 0
+    - _Density: 3.61
+    - _Mask: 0.68
     - _Power: 3
     - _QueueControl: 0
-    - _QueueOffset: 0
-    - _Speed: -0.04
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _ZTest: 4
-    - _ZWrite: 1
-    - _ZWriteControl: 0
+    - _QueueOffset: 1
+    - _Speed: 0.2
+    - _alpha: 0
     m_Colors:
-    - _Color: {r: 0.078431375, g: 0.16078432, b: 0.07450981, a: 0}
-    - _Color2: {r: 0.19607843, g: 0.3019608, b: 0.18431373, a: 0}
+    - _Color: {r: 0.078431375, g: 0.16037735, b: 0.07450981, a: 0}
+    - _Color2: {r: 0.2970274, g: 0.41509432, b: 0.28390884, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1511182899990093448
 MonoBehaviour:
