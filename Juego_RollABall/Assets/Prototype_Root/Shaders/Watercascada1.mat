@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Watersplash
+  m_Name: Watercascada1
   m_Shader: {fileID: -6465566751694194690, guid: 17e2dcf1e33205c45bb12be297db7ffe,
     type: 3}
   m_Parent: {fileID: 0}
@@ -39,12 +39,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 0
-    - _Density: 3.61
+    - _Density: 15
     - _Mask: 1
     - _Power: 3
     - _QueueControl: 0
     - _QueueOffset: 1
-    - _Speed: 0.2
+    - _Speed: -0.2
     - _alpha: 0
     m_Colors:
     - _Color: {r: 0.09821111, g: 0.20754719, b: 0.09300464, a: 0}
