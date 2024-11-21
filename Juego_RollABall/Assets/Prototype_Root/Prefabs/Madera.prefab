@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8750708834786163955}
   - component: {fileID: 5683288498417840982}
   - component: {fileID: 7582917794032961436}
-  - component: {fileID: 34926476024437410}
   - component: {fileID: 2980292523916600090}
+  - component: {fileID: 2053639210882658117}
   m_Layer: 0
   m_Name: Madera
   m_TagString: Ground
@@ -85,22 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &34926476024437410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8231194729702581833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd9c2732fd87ec244b18726a2950af08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationy: 1.5
-  rotationx: 2
-  rotationz: 3
-  speed: 0.5
 --- !u!65 &2980292523916600090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122,3 +106,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07307074, y: 0.034376934, z: 0.0024949852}
   m_Center: {x: -0.0029611588, y: -0.00036149, z: 0.00019800148}
+--- !u!114 &2053639210882658117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231194729702581833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806d48420ebdf0444a84543d2904bb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationy: 0
+  rotationx: 0
+  rotationz: 0
+  speed: 0
