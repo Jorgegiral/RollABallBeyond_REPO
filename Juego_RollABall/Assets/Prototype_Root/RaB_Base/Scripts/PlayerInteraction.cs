@@ -40,11 +40,7 @@ public class PlayerInteraction : MonoBehaviour
             // Destroy(other.gameObject);
         }
         
-       // if (other.gameObject.CompareTag("Finish"))
-      //  {
-          //  WinCall();
-            ///other.gameObject.SetActive(false);
-       // }
+       
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -53,7 +49,7 @@ public class PlayerInteraction : MonoBehaviour
         //if (collision.gameObject.CompareTag("Joy")) //{ salto y velocidad }
         //if (collision.gameObject.CompareTag("Disgust")) //{ inverso (ya echo) }
         //if (collision.gameObject.CompareTag("Fear")) //{ temblar }
-        //if (collision.gameObject.CompareTag("Angry")) //{ va muy rapido}
+        
         //if (collision.gameObject.CompareTag("Sadness")) //{ sin salto y lento }
     }
     void Respawn()

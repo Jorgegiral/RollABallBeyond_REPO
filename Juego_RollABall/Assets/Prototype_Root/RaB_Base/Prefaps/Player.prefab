@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 9186640644329518253}
   - component: {fileID: 5884349439744002461}
   - component: {fileID: 6204705954829040065}
-  - component: {fileID: 6347952221738386832}
+  - component: {fileID: 3488980344532201028}
+  - component: {fileID: 3109875198748796235}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -134,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &6347952221738386832
+--- !u!114 &3488980344532201028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,10 +144,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 6531828254305257497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef17a8db50c17ec4a88b1b1a0f27f0ee, type: 3}
+  m_Script: {fileID: 11500000, guid: bbcd821d5de32604089e1abf87b82fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 6204705954829040065}
-  speed: 5
+  meshRendererToUse: {fileID: 9186640644329518253}
+  materialAngry: {fileID: 2100000, guid: 161e9bf3af5c8d24da5f2e07a5be4950, type: 2}
+  materialJoy: {fileID: 2100000, guid: b31b493723365374cb835917c0c70d51, type: 2}
+  materialSadness: {fileID: 2100000, guid: 3d8221303bdc6bc45bf40d3e21b86b04, type: 2}
+  materialFear: {fileID: 2100000, guid: 436aeff0f21acd24194c10d86d7d0476, type: 2}
+  materialDisgust: {fileID: 2100000, guid: 4f2c0a0fe8035e245b922587fbfb95e6, type: 2}
+  speed: 0.5
+  isInversed: 0
   jumpForce: 0
   isGrounded: 1
+--- !u!114 &3109875198748796235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6531828254305257497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45246553396508f48803f868dc6d8883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsText: {fileID: 0}
+  sceneManagerScript: {fileID: 0}
+  sceneToLoad: 0
+  currentPoints: 0
+  winPoints: 10
+  winGoal: {fileID: 0}
+  respawnPoint: {fileID: 0}
+  respawnFallLimit: -10

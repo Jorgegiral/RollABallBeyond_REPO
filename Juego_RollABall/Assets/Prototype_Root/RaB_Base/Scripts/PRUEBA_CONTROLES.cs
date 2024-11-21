@@ -7,6 +7,13 @@ public class PRUEBA_CONTROLES : MonoBehaviour
 
     [Header("Public References")]
     public Rigidbody playerRb; // Variable para referenciar el Rigibody del jugador, y así modificarlo cuando quiera por código
+    public MeshRenderer meshRendererToUse;
+    public Material materialAngry;
+    public Material materialJoy;
+    public Material materialSadness;
+    public Material materialFear;
+    public Material materialDisgust;
+
 
     [Header("Movement Variables")]
     public float speed;
@@ -50,18 +57,60 @@ public class PRUEBA_CONTROLES : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("InversePick"))
+        if (other.gameObject.CompareTag("Angry"))
         {
-            isInversed = true;
+            Renderer objectRenderer = GetComponent<Renderer>();
+            objectRenderer.material = materialAngry;
+            speed = 30;
+            other.gameObject.SetActive(false);
+            
+        }
+
+        if (other.gameObject.CompareTag("Joy"))
+        {
+            Renderer objectRenderer = GetComponent<Renderer>();
+            objectRenderer.material = materialJoy;
+            speed = 10;
+            jumpForce = 5;
             other.gameObject.SetActive(false);
         }
+        
+        if (other.gameObject.CompareTag("Fear"))
+        {
+            Renderer objectRenderer = GetComponent<Renderer>();
+            objectRenderer.material = materialFear;
+            speed = 10;
+            //temblar
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Sadness"))
+        {
+            Renderer objectRenderer = GetComponent<Renderer>();
+            objectRenderer.material = materialSadness;
+            speed = 2;
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Disgust"))
+        {
+            Renderer objectRenderer = GetComponent<Renderer>();
+            objectRenderer.material = materialDisgust;
+            isInversed = true;
+            speed = 10;
+            other.gameObject.SetActive(false);
+        }
+        else { isInversed = false; }
+
         if(other.gameObject.CompareTag("RestoreInversionPick"))
         {
-            isInversed = false;
+            
             other.gameObject.SetActive(false);
         }
     }
