@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5637719481310361047
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 701c5752fed5b6c4983a2e4dd01425ff,
+  m_Name: Waterrivermat 1
+  m_Shader: {fileID: -6465566751694194690, guid: a296668ae8aec344693613efc88c73f9,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -30,7 +17,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3001
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -51,13 +38,28 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.6
-    - _Density: 200
+    - _Alpha: 1
+    - _Density: 10
+    - _Mask: -0.15
     - _Power: 3
     - _QueueControl: 0
-    - _QueueOffset: 0
-    - _Speed: 1.5
+    - _QueueOffset: 1
+    - _Speed: 0.5
+    - _alpha: 1
     m_Colors:
-    - _Color: {r: 0.07849771, g: 0.16037738, b: 0.073380224, a: 0}
-    - _Color2: {r: 0.19682766, g: 0.3018868, b: 0.18369527, a: 0}
+    - _Color: {r: 0.075906575, g: 0.1981132, b: 0.07008722, a: 0}
+    - _Color2: {r: 0.31819597, g: 0.4245283, b: 0.3063813, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &1511182899990093448
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
