@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5884349439744002461}
   - component: {fileID: 6204705954829040065}
   - component: {fileID: 6347952221738386832}
-  - component: {fileID: 5401497787606989605}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,23 +150,3 @@ MonoBehaviour:
   speed: 5
   jumpForce: 0
   isGrounded: 1
---- !u!114 &5401497787606989605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6531828254305257497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45246553396508f48803f868dc6d8883, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointsText: {fileID: 0}
-  sceneManagerScript: {fileID: 0}
-  sceneToLoad: 0
-  currentPoints: 0
-  winPoints: 0
-  winGoal: {fileID: 0}
-  respawnPoint: {fileID: 0}
-  respawnFallLimit: 0
