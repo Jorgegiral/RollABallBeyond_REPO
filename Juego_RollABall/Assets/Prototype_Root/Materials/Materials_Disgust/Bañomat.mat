@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Vater
+  m_Name: "Ba\xF1omat"
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -113,12 +113,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.735849, g: 0.60709506, b: 0.48246706, a: 1}
-    - _Color: {r: 0.735849, g: 0.60709506, b: 0.482467, a: 1}
+    - _BaseColor: {r: 0.3773585, g: 0.2156894, b: 0.083659664, a: 1}
+    - _Color: {r: 0.37735847, g: 0.21568936, b: 0.08365963, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &7689735980709217455
+--- !u!114 &8216051376146382898
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
