@@ -13,6 +13,7 @@ TagManager:
   - Sadness
   - Angry
   - Fear
+  - Obstacle
   layers:
   - Default
   - TransparentFX
