@@ -68,6 +68,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialAngry;
             speed = 30;
+            jumpForce = 1;
             other.gameObject.SetActive(false);
             
         }
@@ -86,6 +87,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialFear;
             speed = 10;
+            jumpForce = 5;
             //temblar
             other.gameObject.SetActive(false);
         }
@@ -95,6 +97,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialSadness;
             speed = 2;
+            jumpForce = 0;
             other.gameObject.SetActive(false);
         }
 
@@ -104,6 +107,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             objectRenderer.material = materialDisgust;
             isInversed = true;
             speed = 10;
+            jumpForce = 5;
             other.gameObject.SetActive(false);
         }
         else { isInversed = false; }
