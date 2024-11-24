@@ -67,7 +67,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
         {
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialAngry;
-            speed = 30;
+            speed = 50;
             jumpForce = 1;
             other.gameObject.SetActive(false);
             
