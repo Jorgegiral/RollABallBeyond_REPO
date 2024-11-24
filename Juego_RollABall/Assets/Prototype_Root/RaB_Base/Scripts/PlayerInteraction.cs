@@ -9,6 +9,7 @@ public class PlayerInteraction : MonoBehaviour
 
     [Header("UI References")]
     public TMP_Text pointsText; //Ref al texto de Ui que quiero que cambie dinámicamente según los puntos del player
+    public TMP_Text lifeText;
 
     [Header("Scene Management")]
     public SceneChanger sceneManagerScript;
@@ -17,6 +18,7 @@ public class PlayerInteraction : MonoBehaviour
     [Header("Point System Parameters")]
     // Variables para definir los puntos del jugador
     public int currentPoints;
+    public int lifePoints;
     public int winPoints = 10;
     public GameObject winGoal;
 
@@ -28,7 +30,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentPoints < 0) { currentPoints = 0; }
         if (transform.position.y <= respawnFallLimit) { Respawn(); }
-        if (currentPoints >= winPoints) { winGoal.SetActive(true); }
+        if (lifePoints == 0) { LooseCall(); }
         UIUpdate();
     }
     private void OnTriggerEnter(Collider other)
@@ -36,17 +38,21 @@ public class PlayerInteraction : MonoBehaviour
         if (other.gameObject.CompareTag("Joy") || other.gameObject.CompareTag("Sadness") || other.gameObject.CompareTag("Angry") || other.gameObject.CompareTag("Fear") || other.gameObject.CompareTag("Disgust"))
         {
             currentPoints += 1;
+
             other.gameObject.SetActive(false);
             // Destroy(other.gameObject);
         }
-        
-       
+        if (currentPoints == winPoints)
+        {
+            lifePoints++;
+            currentPoints = 0;
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); }
-        
     }
     void Respawn()
     {
@@ -55,11 +61,11 @@ public class PlayerInteraction : MonoBehaviour
 
     void UIUpdate()
     {
-        pointsText.text = "Points: " + currentPoints.ToString() + "/" + winPoints.ToString();
+        pointsText.text = "Soul: " + currentPoints.ToString() + "/" + winPoints.ToString();
+        lifeText.text = "Life: " + lifePoints.ToString();
+    }
 
-    }    
-
-    void WinCall()
+    void LooseCall()
     {
         //Acciòn del cambio de escena
         sceneManagerScript.SceneLoader(sceneToLoad);
