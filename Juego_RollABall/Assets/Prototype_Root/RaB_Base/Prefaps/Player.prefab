@@ -154,7 +154,7 @@ MonoBehaviour:
   materialSadness: {fileID: 2100000, guid: 3d8221303bdc6bc45bf40d3e21b86b04, type: 2}
   materialFear: {fileID: 2100000, guid: 436aeff0f21acd24194c10d86d7d0476, type: 2}
   materialDisgust: {fileID: 2100000, guid: 4f2c0a0fe8035e245b922587fbfb95e6, type: 2}
-  speed: 0.5
+  speed: 5
   isInversed: 0
   jumpForce: 0
   isGrounded: 1
