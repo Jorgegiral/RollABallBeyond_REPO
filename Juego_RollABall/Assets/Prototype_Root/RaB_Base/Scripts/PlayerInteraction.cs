@@ -17,7 +17,7 @@ public class PlayerInteraction : MonoBehaviour
     [Header("Point System Parameters")]
     // Variables para definir los puntos del jugador
     public int currentPoints;
-    public int winPoints;
+    public int winPoints = 10;
     public GameObject winGoal;
 
     [Header("Respawn Parameters")]
@@ -33,7 +33,7 @@ public class PlayerInteraction : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("Joy") || other.gameObject.CompareTag("Sadness") || other.gameObject.CompareTag("Angry") || other.gameObject.CompareTag("Fear") || other.gameObject.CompareTag("Disgust"))
         {
             currentPoints += 1;
             other.gameObject.SetActive(false);
