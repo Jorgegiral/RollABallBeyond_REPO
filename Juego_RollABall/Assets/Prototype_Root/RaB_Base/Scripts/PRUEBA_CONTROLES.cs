@@ -86,8 +86,8 @@ public class PRUEBA_CONTROLES : MonoBehaviour
         {
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialFear;
-            speed = 10;
-            jumpForce = 5;
+            speed = 15;
+            jumpForce = 7;
             //temblar
             other.gameObject.SetActive(false);
         }
