@@ -29,7 +29,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Update()
     {
         if (currentPoints < 0) { currentPoints = 0; }
-        if (transform.position.y <= respawnFallLimit) { Respawn(); }
+        if (transform.position.y <= respawnFallLimit) { Respawn(); lifePoints -= 1; } 
         if (lifePoints == 0) { LooseCall(); }
         UIUpdate();
     }
@@ -52,7 +52,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); }
+        if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); lifePoints -= 1; }
     }
     void Respawn()
     {
