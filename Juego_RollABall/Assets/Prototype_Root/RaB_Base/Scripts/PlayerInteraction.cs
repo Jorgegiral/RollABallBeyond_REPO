@@ -14,7 +14,6 @@ public class PlayerInteraction : MonoBehaviour
     [Header("Scene Management")]
     public SceneChanger sceneManagerScript;
     public int sceneToLoad;
-   
 
     [Header("Point System Parameters")]
     // Variables para definir los puntos del jugador
@@ -27,13 +26,11 @@ public class PlayerInteraction : MonoBehaviour
     public Transform respawnPoint;
     public float respawnFallLimit;
 
-    
-
     private void Update()
     {
         if (currentPoints < 0) { currentPoints = 0; }
-        if (transform.position.y <= respawnFallLimit) { Respawn(); lifePoints -= 1; } 
-        if (lifePoints == 0) //{ LooseCall(); }
+        if (transform.position.y <= respawnFallLimit) { Respawn(); }
+        if (lifePoints == 0) { LooseCall(); }
         UIUpdate();
     }
     private void OnTriggerEnter(Collider other)
@@ -50,11 +47,12 @@ public class PlayerInteraction : MonoBehaviour
             lifePoints++;
             currentPoints = 0;
         }
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); lifePoints -= 1; }
+        if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); }
     }
     void Respawn()
     {
@@ -67,10 +65,10 @@ public class PlayerInteraction : MonoBehaviour
         lifeText.text = "Life: " + lifePoints.ToString();
     }
 
-    //void LooseCall()
-    //{
+    void LooseCall()
+    {
         //Acciòn del cambio de escena
-       // sceneManagerScript.SceneLoader(sceneToLoad);
+        sceneManagerScript.SceneLoader(sceneToLoad);
 
-    //}
+    }
 }
