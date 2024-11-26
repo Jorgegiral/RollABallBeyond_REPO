@@ -12102,12 +12102,12 @@ PrefabInstance:
     - target: {fileID: 3488980344532201028, guid: dcf820d91dd3ba44cac605d8faf649cc,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3488980344532201028, guid: dcf820d91dd3ba44cac605d8faf649cc,
         type: 3}
       propertyPath: jumpForce
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5401497787606989605, guid: dcf820d91dd3ba44cac605d8faf649cc,
         type: 3}
@@ -12183,7 +12183,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b75164543e660f6418675dfef83a3012, type: 2}
+      objectReference: {fileID: 2100000, guid: 436aeff0f21acd24194c10d86d7d0476, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
