@@ -56,6 +56,8 @@ public class PlayerInteraction : MonoBehaviour
     }
     void Respawn()
     {
+        currentPoints = 0;
+        lifePoints -= 1;
         transform.position = respawnPoint.position;
     }
 
@@ -72,3 +74,4 @@ public class PlayerInteraction : MonoBehaviour
 
     }
 }
+
