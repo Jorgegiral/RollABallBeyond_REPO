@@ -110,7 +110,6 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             jumpForce = 10;
             other.gameObject.SetActive(false);
         }
-        else { isInversed = false; }
 
         if(other.gameObject.CompareTag("RestoreInversionPick"))
         {
