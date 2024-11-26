@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Prototype_Root/RaB_Base/Scenes/MainMenu.unity
+    guid: e99b1106035d10347b300acc6b406ea5
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/Test/EvaTest.unity
+    guid: d0fbe12490e3d0e43b6867a06d01974b
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/Test/ElenaTest.unity
+    guid: 6da8de9788a2a2c488fbd6bd08459291
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/Test/CarlaTest.unity
+    guid: d7aa157e4a082fb44a7e77ad9a77bd2a
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/Test/YaizaTest.unity
+    guid: 9f11e241c4b23714992c32006d475971
+  - enabled: 1
     path: Assets/Prototype_Root/Scenes/Test/JorgeTest.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
