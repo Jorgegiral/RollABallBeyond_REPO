@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PRUEBA_CONTROLES : MonoBehaviour
 {
@@ -69,6 +70,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             objectRenderer.material = materialAngry;
             speed = 50;
             jumpForce = 1;
+            GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);
             
         }
@@ -79,6 +81,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             objectRenderer.material = materialJoy;
             speed = 10;
             jumpForce = 15;
+            GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);
         }
         
@@ -89,6 +92,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             speed = 15;
             jumpForce = 7;
             //temblar
+            GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);
         }
 
@@ -96,8 +100,9 @@ public class PRUEBA_CONTROLES : MonoBehaviour
         {
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialSadness;
-            speed = 2;
+            speed = 3.5f;
             jumpForce = 0;
+            GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);
         }
 
@@ -108,9 +113,9 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             isInversed = true;
             speed = 6;
             jumpForce = 10;
+            GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);
         }
-        else { isInversed = false; }
 
         if(other.gameObject.CompareTag("RestoreInversionPick"))
         {
@@ -138,6 +143,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             {
                 isGrounded = false;
                 playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                GetComponent<Soundpickup>().PlayjumpSound();
             }
         }
     }

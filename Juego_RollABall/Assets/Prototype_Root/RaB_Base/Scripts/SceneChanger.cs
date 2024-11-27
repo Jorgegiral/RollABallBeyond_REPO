@@ -14,4 +14,14 @@ public class SceneChanger : MonoBehaviour
     {
         Application.Quit(); //Salir de la aplicación, cierra el juego completamente
     }
+
+    [SerializeField] private string Escena;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(Escena);
+
+        }
+    }
 }

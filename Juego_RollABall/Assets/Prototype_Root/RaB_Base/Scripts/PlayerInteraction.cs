@@ -29,7 +29,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Update()
     {
         if (currentPoints < 0) { currentPoints = 0; }
-        if (transform.position.y <= respawnFallLimit) { Respawn(); lifePoints -= 1; } 
+        if (transform.position.y <= respawnFallLimit) { Respawn(); }
         if (lifePoints == 0) { LooseCall(); }
         UIUpdate();
     }
@@ -52,10 +52,12 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); lifePoints -= 1; }
+        if (collision.gameObject.CompareTag("Obstacle")) { Respawn(); }
     }
     void Respawn()
     {
+        currentPoints = 0;
+        lifePoints -= 1;
         transform.position = respawnPoint.position;
     }
 
@@ -67,8 +69,9 @@ public class PlayerInteraction : MonoBehaviour
 
     void LooseCall()
     {
-        //Acciòn del cambio de escena
+        //Acción del cambio de escena
         sceneManagerScript.SceneLoader(sceneToLoad);
 
     }
 }
+
