@@ -143,6 +143,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             {
                 isGrounded = false;
                 playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                GetComponent<Soundpickup>().PlayjumpSound();
             }
         }
     }

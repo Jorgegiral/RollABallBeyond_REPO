@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Soundpickup : MonoBehaviour
 {
-        public AudioSource audioSource; // Asigna un AudioSource en el inspector.
-        public AudioClip pickupSound;   // Asigna el clip del sonido en el inspector.
+    public AudioSource audioSource; 
+    public AudioClip pickupSound;   
+    public AudioClip jumpSound;
 
-        public void PlayPickupSound()
-        {
-            audioSource.PlayOneShot(pickupSound);
-        }
-    
+    public void PlayPickupSound()
+    {
+        audioSource.PlayOneShot(pickupSound);
+    }
+    public void PlayjumpSound()
+    {
+        audioSource.PlayOneShot(jumpSound);
+    }
 }
