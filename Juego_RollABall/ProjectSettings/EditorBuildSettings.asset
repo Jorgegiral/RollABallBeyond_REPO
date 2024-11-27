@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prototype_Root/Scenes/Test/JorgeTest.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Prototype_Root/RaB_Base/Scenes/LooseScene.unity
+    guid: 0075e4232d933814c92ead9d9f8fb3dc
+  - enabled: 1
+    path: Assets/Prototype_Root/RaB_Base/Scenes/WinScene.unity
+    guid: 12354f829807d724ea388d2c0368e473
   m_configObjects: {}

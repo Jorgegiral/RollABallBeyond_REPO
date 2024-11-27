@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36977088, y: 0.21367078}
   m_AnchorMax: {x: 0.6286042, y: 0.40544719}
-  m_AnchoredPosition: {x: 1, y: 104}
+  m_AnchoredPosition: {x: 2, y: -56.925}
   m_SizeDelta: {x: 0.80599976, y: -113.849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111725565
@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae26fc2b45c5787418b9974d8ba709e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Escena: 
 --- !u!1 &126363284
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36977088, y: 0.11285095}
   m_AnchorMax: {x: 0.6286042, y: 0.19514906}
-  m_AnchoredPosition: {x: 1, y: 197.50006}
+  m_AnchoredPosition: {x: -0.40301514, y: -2.0754395}
   m_SizeDelta: {x: 0.80599976, y: 4.151001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172656184
@@ -673,7 +674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36977088, y: 0.31752172}
   m_AnchorMax: {x: 0.6286042, y: 0.40544719}
-  m_AnchoredPosition: {x: 1.5, y: 161}
+  m_AnchoredPosition: {x: -0.90304565, y: -0.9244995}
   m_SizeDelta: {x: -0.19400024, y: -1.848999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210002999
@@ -830,14 +831,14 @@ MonoBehaviour:
   m_text: '-Use the arrow or awsd keys to move use space bar to jump
 
     -Pick up
-    the cubes to reveal the trophy
+    the souls to reveal its powers
 
-    -Pick the trophy to win
+    -Try not to loose your 3 lifes, otherwise
+    you''ll start again.
 
 
 
-    Beware the
-    obstacles...'
+    Beware the obstacles...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c4d360fbd2f2b13408d71c61d496725a, type: 2}
   m_sharedMaterial: {fileID: -9077504843642100314, guid: c4d360fbd2f2b13408d71c61d496725a,
