@@ -2698,7 +2698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae26fc2b45c5787418b9974d8ba709e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Escena: JorgeTest
+  Escena: YaizaTest
 --- !u!114 &2004674298
 MonoBehaviour:
   m_ObjectHideFlags: 0
