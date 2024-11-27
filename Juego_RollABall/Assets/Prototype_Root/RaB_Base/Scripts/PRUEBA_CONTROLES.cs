@@ -100,7 +100,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
         {
             Renderer objectRenderer = GetComponent<Renderer>();
             objectRenderer.material = materialSadness;
-            speed = 2;
+            speed = 3.5f;
             jumpForce = 0;
             GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);

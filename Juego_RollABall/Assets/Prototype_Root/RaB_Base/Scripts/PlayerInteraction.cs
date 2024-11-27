@@ -69,7 +69,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void LooseCall()
     {
-        //Acciòn del cambio de escena
+        //Acción del cambio de escena
         sceneManagerScript.SceneLoader(sceneToLoad);
 
     }
