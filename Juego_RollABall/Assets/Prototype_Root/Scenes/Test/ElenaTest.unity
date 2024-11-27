@@ -8419,9 +8419,19 @@ PrefabInstance:
       objectReference: {fileID: 2090499274}
     - target: {fileID: 3109875198748796235, guid: dcf820d91dd3ba44cac605d8faf649cc,
         type: 3}
+      propertyPath: sceneToLoad
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109875198748796235, guid: dcf820d91dd3ba44cac605d8faf649cc,
+        type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 750374324}
+    - target: {fileID: 3109875198748796235, guid: dcf820d91dd3ba44cac605d8faf649cc,
+        type: 3}
+      propertyPath: sceneManagerScript
+      value: 
+      objectReference: {fileID: 272724698}
     - target: {fileID: 3488980344532201028, guid: dcf820d91dd3ba44cac605d8faf649cc,
         type: 3}
       propertyPath: speed
