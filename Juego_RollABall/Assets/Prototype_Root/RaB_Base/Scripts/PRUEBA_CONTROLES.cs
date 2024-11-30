@@ -25,11 +25,13 @@ public class PRUEBA_CONTROLES : MonoBehaviour
     [Header("Jump Variables")]
     public float jumpForce;
     public bool isGrounded = true;
+    Vector3 scaleoriginal;
 
     // Start is called before the first frame update
     void Start()
     {
         isInversed = false;
+        scaleoriginal = transform.localScale; //pruebajorge
     }
 
     // Update is called once per frame
@@ -92,6 +94,7 @@ public class PRUEBA_CONTROLES : MonoBehaviour
             speed = 15;
             jumpForce = 7;
             //temblar
+            transform.localScale = new Vector3(scaleoriginal.x + Mathf.Sin(Time.time * 2f) * 1.5f, scaleoriginal.y, scaleoriginal.z);
             GetComponent<Soundpickup>().PlayPickupSound();
             other.gameObject.SetActive(false);
         }
